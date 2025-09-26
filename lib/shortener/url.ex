@@ -15,6 +15,8 @@ defmodule Shortener.Url do
     url
     |> cast(attrs, [:original_url, :slug, :click_count])
     |> validate_required([:original_url, :slug])
+    |> validate_length(:original_url, max: 2048)
+    |> validate_length(:slug, max: 255)
     |> unique_constraint(:slug)
   end
 end
