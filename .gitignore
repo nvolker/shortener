@@ -7,6 +7,9 @@
 # The directory Mix downloads your dependencies sources to.
 /deps/
 
+# Elixir Language Server
+.elixir_ls/
+
 # Where 3rd-party dependencies like ExDoc output generated docs.
 /doc/
 
@@ -23,7 +26,7 @@ erl_crash.dump
 /tmp/
 
 # Ignore package tarball (built via "mix hex.build").
-shortener-*.tar
+squaddie-*.tar
 
 # Ignore assets that are produced by build tools.
 /priv/static/assets/
@@ -34,4 +37,5 @@ shortener-*.tar
 # In case you use Node.js/npm, you want to ignore these.
 npm-debug.log
 /assets/node_modules/
-
+.envrc
+.claude/settings.local.json
